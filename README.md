@@ -84,15 +84,7 @@ Private methods are written in __lowerCamelCase__. For example: `doSometing`
 
 ### Fields
 
-Written in __lowerCamelCase__.
-
-Static fields should be written in __UpperCamelCase__:
-
-```c#
-public static int TheAnswer = 42;
-```
-
-Public and protected non-static fields are written __lowerCamelCase__.
+Public and protected fields are written __lowerCamelCase__.
 
 For example:
 
