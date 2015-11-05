@@ -22,7 +22,7 @@ This guide was taken mostly from [Ray Wenderlich's](https://github.com/rwenderli
 - use `var` over explicit type where type can be inferred (`var foo = "bar";` over `string foo = "bar";`)
 - avoid using `this` unless absolutely necessary
 - use `_camelCase` for private fields
-- always specify member visiblity (`private string _foo;` not `string _foo;`)
+- specify member visiblity (`private string _foo;` not `string _foo;`)
 - prefer C# type keywords over .NET type names (`string` over `String`)
 
 ## Table of Contents
@@ -98,9 +98,10 @@ Public and protected non-static fields are written __lowerCamelCase__.
 For example:
 
 ```C#
-public class MyClass {
+public class MyClass 
+{
   public int publicField;
-  int packagePrivate;
+  private int packagePrivate;
   private int myPrivate;
   protected int myProtected;
 }
@@ -128,12 +129,12 @@ Parameters are written in __lowerCamelCase__.
 __BAD:__
 
 ```c#
-void doSomething(Vector3 Location)
+private void doSomething(Vector3 Location)
 ```
 __GOOD:__
 
 ```c#
-void doSomething(Vector3 location)
+private void doSomething(Vector3 location)
 ```
 
 Single character values to be avoided except for temporary looping variables.
@@ -311,7 +312,8 @@ several methods.
 
 ## Brace Style
 
-Curly braces go on their own line:
+Curly braces are preferred on their own line, with exceptions for loops, 
+object initialization and similar cases:
 
 __BAD:__
 
