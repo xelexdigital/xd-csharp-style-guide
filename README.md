@@ -46,7 +46,7 @@ This guide was taken mostly from [Ray Wenderlich's](https://github.com/rwenderli
 - indent an additional 4 spaces for line wraps
 
 #### Language
-- use `var` over explicit type where type can be inferred (`var foo = "bar";` not `string foo = "bar"`)
+- use `var` over explicit type where type can be inferred (`var foo = "bar";` over `string foo = "bar";`)
 - avoid using `this` unless absolutely necessary
 - use `_camelCase` for private fields
 - always specify member visiblity (`private string _foo;` not `string _foo;`)
