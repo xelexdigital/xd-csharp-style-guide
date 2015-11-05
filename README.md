@@ -2,6 +2,29 @@
 
 This guide was taken mostly from [Ray Wenderlich's](https://github.com/rwenderlich) very well structured [c-sharp-style-guide](https://github.com/raywenderlich/c-sharp-style-guide) with a bit closer adherence to [Microsoft's Coding Conventions](https://msdn.microsoft.com/en-us/library/ff926074.aspx). We're also utilizing [ASPNet's Engineering Guidelines](https://github.com/aspnet/Home/wiki/Engineering-guidelines#coding-guidelines) here.
 
+## Quick Reference
+
+#### Naming
+- naming should follow [Microsoft's Guidelines](https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx)
+
+#### Layout
+- one statement or declaration per line
+- curly braces on their own line
+- no braces for single line conditional statements 
+- always use braces for conditional statements spanning multiple lines
+- one blank line between method definitions and property definitions
+- 100 characters per line
+- spaces for indentation rather than tabs
+- indent 4 spaces
+- indent an additional 4 spaces for line wraps
+
+#### Language
+- use `var` over explicit type where type can be inferred (`var foo = "bar";` over `string foo = "bar";`)
+- avoid using `this` unless absolutely necessary
+- use `_camelCase` for private fields
+- always specify member visiblity (`private string _foo;` not `string _foo;`)
+- prefer C# type keywords over .NET type names (`string` over `String`)
+
 ## Table of Contents
 
 - [Quick Reference](#quick-reference)
@@ -27,30 +50,6 @@ This guide was taken mostly from [Ray Wenderlich's](https://github.com/rwenderli
 - [Switch Statements](#switch-statements)
 - [Language](#language)
 - [Copyright Statement](#copyright-statement)
-
-
-## Quick Reference
-
-#### Naming
-- naming should follow [Microsoft's Guidelines](https://msdn.microsoft.com/en-us/library/ms229002(v=vs.110).aspx)
-
-#### Layout
-- one statement or declaration per line
-- curly braces on their own line
-- no braces for single line conditional statements 
-- always use braces for conditional statements spanning multiple lines
-- one blank line between method definitions and property definitions
-- 100 characters per line
-- spaces for indentation rather than tabs
-- indent 4 spaces
-- indent an additional 4 spaces for line wraps
-
-#### Language
-- use `var` over explicit type where type can be inferred (`var foo = "bar";` over `string foo = "bar";`)
-- avoid using `this` unless absolutely necessary
-- use `_camelCase` for private fields
-- always specify member visiblity (`private string _foo;` not `string _foo;`)
-- prefer C# type keywords over .NET type names (`string` over `String`)
 
 ## Nomenclature
 
