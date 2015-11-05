@@ -9,7 +9,7 @@ This guide was taken mostly from [Ray Wenderlich's](https://github.com/rwenderli
 
 #### Layout
 - one statement or declaration per line
-- curly braces on their own line
+- generally prefer curly braces on their own line, with exceptions
 - no braces for single line conditional statements 
 - always use braces for conditional statements spanning multiple lines
 - one blank line between method definitions and property definitions
