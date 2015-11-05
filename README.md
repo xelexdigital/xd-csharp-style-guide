@@ -19,7 +19,7 @@ This guide was taken mostly from [Ray Wenderlich's](https://github.com/rwenderli
 - indent an additional 4 spaces for line wraps
 
 #### Language
-- use `var` over explicit type where type can be inferred (`var foo = "bar";` over `string foo = "bar";`)
+- prefer `var` over explicit type (`var foo = "bar";` over `string foo = "bar";`)
 - avoid using `this` unless absolutely necessary
 - use `_camelCase` for private fields
 - specify member visiblity (`private string _foo;` not `string _foo;`)
@@ -223,6 +223,23 @@ __GOOD:__
 ```c#
 string username;
 string twitterHandle;
+```
+
+Prefer `var` over explicit types where type can be reasonably inferred. 
+This promotes readability and clarity of variables.
+
+__BAD:__
+
+```c#
+string foo = "Bar";
+SomeAwesomeType foo = new AwesomeType();
+```
+
+__GOOD:__
+
+```c#
+var foo = "Bar";
+var foo = new AwesomeType();
 ```
 
 ### Classes
