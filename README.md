@@ -92,8 +92,8 @@ For example:
 public class MyClass 
 {
     public int publicField;
-    private int packagePrivate;
-    private int myPrivate;
+    private int _packagePrivate;
+    private int _myPrivate;
     protected int myProtected;
 }
 ```
