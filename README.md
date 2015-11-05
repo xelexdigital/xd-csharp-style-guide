@@ -100,10 +100,10 @@ For example:
 ```C#
 public class MyClass 
 {
-  public int publicField;
-  private int packagePrivate;
-  private int myPrivate;
-  protected int myProtected;
+    public int publicField;
+    private int packagePrivate;
+    private int myPrivate;
+    protected int myProtected;
 }
 ```
 
@@ -336,13 +336,13 @@ __BAD:__
 
 ```c#
 class MyClass {
-  void DoSomething() {
-    if (someTest) {
-      // ...
-    } else {
-      // ...
+    void DoSomething() {
+      if (someTest) {
+        // ...
+      } else {
+        // ...
+      }
     }
-  }
 }
 ```
 
@@ -351,17 +351,17 @@ __GOOD:__
 ```c#
 class MyClass
 {
-  void DoSomething()
-  {
-    if (someTest)
+    void DoSomething()
     {
-      // ...
+        if (someTest)
+        {
+          // ...
+        }
+        else
+        {
+          // ...
+        }
     }
-    else
-    {
-      // ...
-    }
-  }
 }
 ```
 
@@ -371,7 +371,7 @@ __BAD:__
 
 ```c#
 if (someTest)
-  doSomething();
+    doSomething();
 if (someTest) { doSomethingElse(); }
 ```
 
@@ -380,7 +380,7 @@ __GOOD:__
 ```c#
 if (someTest) doSomething();
 if (someTest) { 
-  doSomethingElse();
+    doSomethingElse();
 }
 ```
 
